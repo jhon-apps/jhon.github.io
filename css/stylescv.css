@@ -102,6 +102,7 @@ h2 {
     }
     .profile-header {
         text-align: center;
+        padding: 15px; /* Riduci padding per adattare meglio lo spazio */
     }
     .profile-header h1 {
         font-size: 1.5rem;
@@ -118,7 +119,7 @@ h2 {
 @media (max-width: 480px) {
     .container, .function-bar {
         width: 100%; /* Utilizza tutta la larghezza disponibile per schermi piccoli */
-        padding: 0 10px; /* Aggiungi un po' di padding ai lati */
+        padding: 0 5px; /* Aggiungi un po' di padding ai lati per margini */
     }
     .profile-header h1 {
         font-size: 1.2rem;
@@ -126,9 +127,27 @@ h2 {
     .profile-header p,
     .section p,
     .content h2 {
-        font-size: 0.8rem;
+        font-size: 0.75rem; /* Riduci la dimensione del font per schermi più piccoli */
     }
     .content h2 {
         font-size: 1rem;
+    }
+    .function-bar button {
+        padding: 8px 15px; /* Riduci il padding per adattare meglio i bottoni */
+        font-size: 0.9rem; /* Riduci la dimensione del testo dei bottoni */
+    }
+}
+@media (max-width: 320px) {
+    .profile-header h1 {
+        font-size: 1rem; /* Font più piccolo per schermi molto stretti */
+    }
+    .profile-header p,
+    .section p,
+    .content h2 {
+        font-size: 0.7rem;
+    }
+    .function-bar button {
+        padding: 5px 10px; /* Riduci ulteriormente il padding per adattarsi */
+        font-size: 0.8rem;
     }
 }
