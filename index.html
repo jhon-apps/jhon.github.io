@@ -1,60 +1,117 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profilo di Jhonatan Meazza</title>
-  <link rel="stylesheet" href="css/stylescv.css">
-</head>
-<body>
-<div class="container">
-  <div class="profile-header">
-    <h1>Jhonatan Meazza</h1>
-    <p><strong>Java Software Engineer</strong></p>
-    <p>Milano, Lombardia, Italia</p>
-  </div>
-
-  <div class="content">
-    <div class="section contact">
-      <h2>Contatta</h2>
-      <p>Email: <a href="mailto:Meazza.Jhonatan@gmail.com">Meazza.Jhonatan@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/jhonatan-meazza-9aba1b178" target="_blank">www.linkedin.com/in/jhonatan-meazza</a></p>
-    </div>
-
-    <div class="section summary">
-      <h2>Riepilogo</h2>
-      <p>Programmatore Java Junior, Spring, Spring MVC, Spring Security, Maven, Jpa Repository Jpa, MySql, Javascript, JQuery, Html, Css. Conoscenza delle WebApp, Jsp, Jstl. Pattern di lavoro MVC, Facade, Adapter, Singleton, RestApi altri. Aderito al programma Garanzia Giovani.</p>
-    </div>
-
-    <div class="section experience">
-      <h2>Esperienza</h2>
-      <p><strong>Software Inside Srl</strong> - Sviluppatore java</p>
-      <p><em>ottobre 2024 - Present (1 mese)</em></p>
-
-      <p><strong>Nextre</strong></p>
-      <p>Junior Java Developer (luglio 2020 - ottobre 2024, 4 anni 4 mesi)</p>
-      <p>Sviluppatore java (luglio 2020 - maggio 2024, 3 anni 11 mesi)</p>
-
-      <p><strong>Fides</strong> - Software Engineer</p>
-      <p><em>maggio 2024 - agosto 2024 (4 mesi)</em></p>
-
-      <p><strong>Samarcanda Intrattenimenti</strong> - Animatore</p>
-      <p><em>giugno 2018 - settembre 2018 (4 mesi)</em></p>
-      <p>Animatore Ragazzi 14-17 anni</p>
-    </div>
-
-    <div class="section education">
-      <h2>Formazione</h2>
-      <p><strong>Programmatore Java Junior</strong>, Generation Italy (2019 - 2020)</p>
-      <p><strong>IELTS</strong>, Inglese, Oxford House College (2015)</p>
-      <p><strong>Chimico Biologo</strong>, Ipsia Ferraris Pacinotti, Chimica e Biologia (2009 - 2013)</p>
-    </div>
-
-    <div class="section projects">
-      <h2>Progetti personali</h2>
-      <p>Google: <a href="https://www.google.it" target="_blank">www.google.it</a></p>
-    </div>
-  </div>
-</div>
-</body>
-</html>
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.6;
+background-color: #f0f4f8;
+color: #333;
+margin: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.buttons {
+margin-bottom: 20px;
+}
+.buttons button {
+background-color: #1b4f72;
+color: #ffffff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+margin-right: 10px;
+cursor: pointer;
+font-size: 1rem;
+}
+.buttons button:hover {
+background-color: #145a7b;
+}
+.container {
+background-color: #ffffff;
+display: flex;
+flex-direction: row;
+border-radius: 8px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+width: 100%;
+max-width: 1200px;
+}
+.profile-header {
+width: 25%;
+background-color: #1b4f72;
+color: #ffffff;
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
+.profile-header h1 {
+color: #ffffff;
+margin-bottom: 10px;
+font-size: 2rem;
+}
+.profile-header p {
+margin: 5px 0;
+font-size: 1rem;
+}
+.content {
+width: 75%;
+padding: 20px;
+}
+h2 {
+color: #1b4f72;
+border-bottom: 2px solid #1b4f72;
+padding-bottom: 5px;
+margin-bottom: 10px;
+font-size: 1.5rem;
+}
+.section {
+margin-bottom: 20px;
+}
+.section p {
+margin: 5px 0;
+font-size: 1rem;
+}
+.contact a {
+color: #1b4f72;
+text-decoration: none;
+}
+.contact a:hover {
+text-decoration: underline;
+}
+.experience strong, .education strong {
+color: #34495e;
+}
+@media (max-width: 768px) {
+.container {
+flex-direction: column;
+}
+.profile-header, .content {
+width: 100%;
+}
+.profile-header {
+text-align: center;
+}
+.profile-header h1 {
+font-size: 1.5rem;
+}
+.profile-header p,
+.section p,
+.content h2 {
+font-size: 0.9rem;
+}
+.content h2 {
+font-size: 1.2rem;
+}
+}
+@media (max-width: 480px) {
+.profile-header h1 {
+font-size: 1.2rem;
+}
+.profile-header p,
+.section p,
+.content h2 {
+font-size: 0.8rem;
+}
+.content h2 {
+font-size: 1rem;
+}
+}
