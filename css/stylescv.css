@@ -5,7 +5,24 @@ body {
     color: #333;
     margin: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.buttons {
+    margin-bottom: 20px;
+}
+.buttons button {
+    background-color: #1b4f72;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.buttons button:hover {
+    background-color: #145a7b;
 }
 .container {
     background-color: #ffffff;
