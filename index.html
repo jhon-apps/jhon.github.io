@@ -36,9 +36,11 @@
     .profile-header h1 {
         color: #ffffff;
         margin-bottom: 10px;
+        font-size: 2rem;
     }
     .profile-header p {
         margin: 5px 0;
+        font-size: 1rem;
     }
     .content {
         width: 75%;
@@ -49,12 +51,14 @@
         border-bottom: 2px solid #1b4f72;
         padding-bottom: 5px;
         margin-bottom: 10px;
+        font-size: 1.5rem;
     }
     .section {
         margin-bottom: 20px;
     }
     .section p {
         margin: 5px 0;
+        font-size: 1rem;
     }
     .contact a {
         color: #1b4f72;
@@ -75,6 +79,30 @@
         }
         .profile-header {
             text-align: center;
+        }
+        .profile-header h1 {
+            font-size: 1.5rem;
+        }
+        .profile-header p,
+        .section p,
+        .content h2 {
+            font-size: 0.9rem;
+        }
+        .content h2 {
+            font-size: 1.2rem;
+        }
+    }
+    @media (max-width: 480px) {
+        .profile-header h1 {
+            font-size: 1.2rem;
+        }
+        .profile-header p,
+        .section p,
+        .content h2 {
+            font-size: 0.8rem;
+        }
+        .content h2 {
+            font-size: 1rem;
         }
     }
   </style>
