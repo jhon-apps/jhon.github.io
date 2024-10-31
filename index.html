@@ -6,61 +6,88 @@
   <title>Profilo di Jhonatan Meazza</title>
   <style>
     body {
-        font-family: Arial, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.6;
+        background-color: #f0f4f8;
+        color: #333;
         margin: 40px;
     }
-    h1, h2 {
-        color: #333;
+    h1 {
+        color: #2c3e50;
+        text-align: center;
     }
-    .contact, .summary, .experience, .education {
+    h2 {
+        color: #2980b9;
+        border-bottom: 2px solid #2980b9;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    .container {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    .section {
         margin-bottom: 20px;
     }
-    .contact p, .summary p, .experience p, .education p {
+    .section p {
         margin: 5px 0;
+    }
+    .contact a {
+        color: #2980b9;
+        text-decoration: none;
+    }
+    .contact a:hover {
+        text-decoration: underline;
+    }
+    .experience strong, .education strong {
+        color: #34495e;
     }
   </style>
 </head>
 <body>
-<h1>Jhonatan Meazza</h1>
-<p><strong>Java Software Engineer</strong></p>
-<p>Milano, Lombardia, Italia</p>
+<div class="container">
+  <h1>Jhonatan Meazza</h1>
+  <p style="text-align: center;"><strong>Java Software Engineer</strong></p>
+  <p style="text-align: center;">Milano, Lombardia, Italia</p>
 
-<div class="contact">
-  <h2>Contatta</h2>
-  <p>Email: <a href="mailto:Meazza.Jhonatan@gmail.com">Meazza.Jhonatan@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/jhonatan-meazza-9aba1b178" target="_blank">www.linkedin.com/in/jhonatan-meazza</a></p>
-</div>
+  <div class="section contact">
+    <h2>Contatta</h2>
+    <p>Email: <a href="mailto:Meazza.Jhonatan@gmail.com">Meazza.Jhonatan@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/jhonatan-meazza-9aba1b178" target="_blank">www.linkedin.com/in/jhonatan-meazza</a></p>
+  </div>
 
-<div class="summary">
-  <h2>Riepilogo</h2>
-  <p>Programmatore Java Junior, Spring, Spring MVC, Spring Security, Maven, Jpa Repository Jpa, MySql, Javascript, JQuery, Html, Css. Conoscenza delle WebApp, Jsp, Jstl. Pattern di lavoro MVC, Facade, Adapter, Singleton, RestApi altri. Aderito al programma Garanzia Giovani.</p>
-</div>
+  <div class="section summary">
+    <h2>Riepilogo</h2>
+    <p>Programmatore Java Junior, Spring, Spring MVC, Spring Security, Maven, Jpa Repository Jpa, MySql, Javascript, JQuery, Html, Css. Conoscenza delle WebApp, Jsp, Jstl. Pattern di lavoro MVC, Facade, Adapter, Singleton, RestApi altri. Aderito al programma Garanzia Giovani.</p>
+  </div>
 
-<div class="experience">
-  <h2>Esperienza</h2>
-  <p><strong>Software Inside Srl</strong> - Sviluppatore java</p>
-  <p>ottobre 2024 - Present (1 mese)</p>
+  <div class="section experience">
+    <h2>Esperienza</h2>
+    <p><strong>Software Inside Srl</strong> - Sviluppatore java</p>
+    <p><em>ottobre 2024 - Present (1 mese)</em></p>
 
-  <p><strong>Nextre</strong></p>
-  <p>Junior Java Developer (luglio 2020 - ottobre 2024, 4 anni 4 mesi)</p>
-  <p>Sviluppatore java (luglio 2020 - maggio 2024, 3 anni 11 mesi)</p>
+    <p><strong>Nextre</strong></p>
+    <p>Junior Java Developer (luglio 2020 - ottobre 2024, 4 anni 4 mesi)</p>
+    <p>Sviluppatore java (luglio 2020 - maggio 2024, 3 anni 11 mesi)</p>
 
-  <p><strong>Fides</strong> - Software Engineer</p>
-  <p>maggio 2024 - agosto 2024 (4 mesi)</p>
+    <p><strong>Fides</strong> - Software Engineer</p>
+    <p><em>maggio 2024 - agosto 2024 (4 mesi)</em></p>
 
-  <p><strong>Samarcanda Intrattenimenti</strong> - Animatore</p>
-  <p>giugno 2018 - settembre 2018 (4 mesi)</p>
-  <p>Animatore Ragazzi 14-17 anni</p>
+    <p><strong>Samarcanda Intrattenimenti</strong> - Animatore</p>
+    <p><em>giugno 2018 - settembre 2018 (4 mesi)</em></p>
+    <p>Animatore Ragazzi 14-17 anni</p>
 
-  <!-- Altre esperienze lavorative aggiunte qui -->
-</div>
+    <!-- Altre esperienze lavorative aggiunte qui -->
+  </div>
 
-<div class="education">
-  <h2>Formazione</h2>
-  <p><strong>Programmatore Java Junior</strong>, Generation Italy (2019 - 2020)</p>
-  <p><strong>IELTS</strong>, Inglese, Oxford House College (2015)</p>
-  <p><strong>Chimico Biologo</strong>, Ipsia Ferraris Pacinotti, Chimica e Biologia (2009 - 2013)</p>
+  <div class="section education">
+    <h2>Formazione</h2>
+    <p><strong>Programmatore Java Junior</strong>, Generation Italy (2019 - 2020)</p>
+    <p><strong>IELTS</strong>, Inglese, Oxford House College (2015)</p>
+    <p><strong>Chimico Biologo</strong>, Ipsia Ferraris Pacinotti, Chimica e Biologia (2009 - 2013)</p>
+  </div>
 </div>
 </body>
 </html>
