@@ -9,7 +9,7 @@ body {
     align-items: center;
 }
 .container, .function-bar {
-    width: 80%; /* Riduci la larghezza per accentuare i limiti laterali */
+    width: 90%; /* Larghezza di base */
     max-width: 1000px; /* Limite massimo di larghezza */
     margin: 0 auto; /* Centra il contenitore orizzontalmente */
 }
@@ -95,6 +95,7 @@ h2 {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        width: 95%; /* Larghezza adattabile per schermi medi */
     }
     .profile-header, .content {
         width: 100%;
@@ -115,6 +116,10 @@ h2 {
     }
 }
 @media (max-width: 480px) {
+    .container, .function-bar {
+        width: 100%; /* Utilizza tutta la larghezza disponibile per schermi piccoli */
+        padding: 0 10px; /* Aggiungi un po' di padding ai lati */
+    }
     .profile-header h1 {
         font-size: 1.2rem;
     }
