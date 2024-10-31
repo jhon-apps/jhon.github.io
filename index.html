@@ -11,22 +11,43 @@
         background-color: #f0f4f8;
         color: #333;
         margin: 40px;
+        display: flex;
+        justify-content: center;
     }
-    h1 {
-        color: #2c3e50;
-        text-align: center;
+    .container {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 80%;
+    }
+    .profile-header {
+        width: 25%;
+        background-color: #2980b9;
+        color: #ffffff;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .profile-header h1 {
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+    .profile-header p {
+        margin: 5px 0;
+    }
+    .content {
+        width: 75%;
+        padding: 20px;
     }
     h2 {
         color: #2980b9;
         border-bottom: 2px solid #2980b9;
         padding-bottom: 5px;
         margin-bottom: 10px;
-    }
-    .container {
-        background-color: #ffffff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     }
     .section {
         margin-bottom: 20px;
@@ -48,45 +69,49 @@
 </head>
 <body>
 <div class="container">
-  <h1>Jhonatan Meazza</h1>
-  <p style="text-align: center;"><strong>Java Software Engineer</strong></p>
-  <p style="text-align: center;">Milano, Lombardia, Italia</p>
-
-  <div class="section contact">
-    <h2>Contatta</h2>
-    <p>Email: <a href="mailto:Meazza.Jhonatan@gmail.com">Meazza.Jhonatan@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/jhonatan-meazza-9aba1b178" target="_blank">www.linkedin.com/in/jhonatan-meazza</a></p>
+  <div class="profile-header">
+    <h1>Jhonatan Meazza</h1>
+    <p><strong>Java Software Engineer</strong></p>
+    <p>Milano, Lombardia, Italia</p>
   </div>
 
-  <div class="section summary">
-    <h2>Riepilogo</h2>
-    <p>Programmatore Java Junior, Spring, Spring MVC, Spring Security, Maven, Jpa Repository Jpa, MySql, Javascript, JQuery, Html, Css. Conoscenza delle WebApp, Jsp, Jstl. Pattern di lavoro MVC, Facade, Adapter, Singleton, RestApi altri. Aderito al programma Garanzia Giovani.</p>
-  </div>
+  <div class="content">
+    <div class="section contact">
+      <h2>Contatta</h2>
+      <p>Email: <a href="mailto:Meazza.Jhonatan@gmail.com">Meazza.Jhonatan@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jhonatan-meazza-9aba1b178" target="_blank">www.linkedin.com/in/jhonatan-meazza</a></p>
+    </div>
 
-  <div class="section experience">
-    <h2>Esperienza</h2>
-    <p><strong>Software Inside Srl</strong> - Sviluppatore java</p>
-    <p><em>ottobre 2024 - Present (1 mese)</em></p>
+    <div class="section summary">
+      <h2>Riepilogo</h2>
+      <p>Programmatore Java Junior, Spring, Spring MVC, Spring Security, Maven, Jpa Repository Jpa, MySql, Javascript, JQuery, Html, Css. Conoscenza delle WebApp, Jsp, Jstl. Pattern di lavoro MVC, Facade, Adapter, Singleton, RestApi altri. Aderito al programma Garanzia Giovani.</p>
+    </div>
 
-    <p><strong>Nextre</strong></p>
-    <p>Junior Java Developer (luglio 2020 - ottobre 2024, 4 anni 4 mesi)</p>
-    <p>Sviluppatore java (luglio 2020 - maggio 2024, 3 anni 11 mesi)</p>
+    <div class="section experience">
+      <h2>Esperienza</h2>
+      <p><strong>Software Inside Srl</strong> - Sviluppatore java</p>
+      <p><em>ottobre 2024 - Present (1 mese)</em></p>
 
-    <p><strong>Fides</strong> - Software Engineer</p>
-    <p><em>maggio 2024 - agosto 2024 (4 mesi)</em></p>
+      <p><strong>Nextre</strong></p>
+      <p>Junior Java Developer (luglio 2020 - ottobre 2024, 4 anni 4 mesi)</p>
+      <p>Sviluppatore java (luglio 2020 - maggio 2024, 3 anni 11 mesi)</p>
 
-    <p><strong>Samarcanda Intrattenimenti</strong> - Animatore</p>
-    <p><em>giugno 2018 - settembre 2018 (4 mesi)</em></p>
-    <p>Animatore Ragazzi 14-17 anni</p>
+      <p><strong>Fides</strong> - Software Engineer</p>
+      <p><em>maggio 2024 - agosto 2024 (4 mesi)</em></p>
 
-    <!-- Altre esperienze lavorative aggiunte qui -->
-  </div>
+      <p><strong>Samarcanda Intrattenimenti</strong> - Animatore</p>
+      <p><em>giugno 2018 - settembre 2018 (4 mesi)</em></p>
+      <p>Animatore Ragazzi 14-17 anni</p>
 
-  <div class="section education">
-    <h2>Formazione</h2>
-    <p><strong>Programmatore Java Junior</strong>, Generation Italy (2019 - 2020)</p>
-    <p><strong>IELTS</strong>, Inglese, Oxford House College (2015)</p>
-    <p><strong>Chimico Biologo</strong>, Ipsia Ferraris Pacinotti, Chimica e Biologia (2009 - 2013)</p>
+      <!-- Altre esperienze lavorative aggiunte qui -->
+    </div>
+
+    <div class="section education">
+      <h2>Formazione</h2>
+      <p><strong>Programmatore Java Junior</strong>, Generation Italy (2019 - 2020)</p>
+      <p><strong>IELTS</strong>, Inglese, Oxford House College (2015)</p>
+      <p><strong>Chimico Biologo</strong>, Ipsia Ferraris Pacinotti, Chimica e Biologia (2009 - 2013)</p>
+    </div>
   </div>
 </div>
 </body>
